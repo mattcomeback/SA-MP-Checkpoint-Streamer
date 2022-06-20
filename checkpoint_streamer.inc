@@ -392,7 +392,7 @@ stock GetCheckpointOwner(cpid)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
@@ -405,7 +405,7 @@ stock GetCheckpointType(cpid)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
@@ -418,7 +418,7 @@ stock GetCheckpointPos(cpid, &Float:x, &Float:y, &Float:z)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
@@ -435,7 +435,7 @@ stock GetCheckpointStreamDistance(cpid, &Float:streamdistance)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
@@ -450,7 +450,7 @@ stock GetCheckpointInterior(cpid)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
@@ -463,7 +463,7 @@ stock GetCheckpointVirtualWorld(cpid)
 {
 	if(cpid >= MAX_CHECKPOINTS || cpid < 0)
 	{
-		return INVALID_PLAYER_ID;
+		return INVALID_CHECKPOINT_ID;
 	}
 	if(CheckpointData[cpid][CheckpointActive] == false)
 	{
